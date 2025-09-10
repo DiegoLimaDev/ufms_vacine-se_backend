@@ -12,5 +12,6 @@ RUN npm install
 # Copie o resto do seu código
 COPY . .
 
+EXPOSE 3333
 # O comando para iniciar em modo de desenvolvimento
 CMD ["npm", "run", "dev"]
