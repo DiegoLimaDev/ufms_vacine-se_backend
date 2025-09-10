@@ -10,7 +10,9 @@ import {
 import { VaccinesService } from "./vaccines.service";
 import { IVaccinesDto } from "./dto/vaccines.dto";
 import { IVaccinesUpdateDto } from "./dto/vaccines.update.dto";
+import { ApiTags } from "@nestjs/swagger";
 
+@ApiTags("Vaccines")
 @Controller("vaccines")
 export class VaccinesController {
   constructor(private readonly vaccinesService: VaccinesService) {}

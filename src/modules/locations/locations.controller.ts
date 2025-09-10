@@ -10,7 +10,9 @@ import {
 import { LocationsService } from "./locations.service";
 import { ILocationsDto } from "./dto/locations.dto";
 import { ILocationsUpdateDto } from "./dto/locations.update.dto";
+import { ApiTags } from "@nestjs/swagger";
 
+@ApiTags("Locations")
 @Controller("locations")
 export class LocationsController {
   constructor(private readonly locationsService: LocationsService) {}
